@@ -1,0 +1,14 @@
+### Health
+GET http://localhost:8000/health
+
+### Create order
+POST http://localhost:8000/orders
+Content-Type: application/json
+
+{
+  "customer_id": "cust-42",
+  "items": [
+    { "sku": "Coffee-Beans-1kg", "qty": 2, "price": 12.5 },
+    { "sku": "Milk-1l", "qty": 1, "price": 1.8 }
+  ]
+}
